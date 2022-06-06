@@ -1,0 +1,82 @@
+[
+  {
+    "model": "django.contrib.auth.models.User",
+    "fields": {
+      "pk": 1,
+      "password": "pbkdf2_sha256$180000$p35UH2yYInHF$4LTphT2basUmvfLq+XHETVvKONZrWUsLfKu1K8/Hqdk=",
+      "last_login": "2022-06-06 09:30:44.161423",
+      "is_superuser": 1,
+      "username": "admin",
+      "first_name": "",
+      "email": "admin@email.com",
+      "is_staff": 1,
+      "is_active": 1,
+      "date_joined": "2020-06-14 09:41:15.326411",
+      "last_name": ""
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$8ZKjEEdeYubZ$jq4T/Vaa2DWdAvzNys4ynNO6Wd/PsWe3dux20F7BGgQ=",
+      "last_login": null,
+      "is_superuser": 0,
+      "username": "4meRomance",
+      "first_name": "John",
+      "email": "coemperor@famemma.net",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2020-06-14 09:44:05",
+      "last_name": "Rodriguez"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$DdNkE39rolFF$nGmWZanXv4GlcTxtfUgc+MUIqBgDszAtvFfuFu538LQ=",
+      "last_login": null,
+      "is_superuser": 0,
+      "username": "AirWow",
+      "first_name": "Ada",
+      "email": "flocation.vam4@glendenningflowerdesign.com",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2020-06-14 09:44:45",
+      "last_name": "Paul"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$3VJdHtu39cbD$8qNVkvJ0KddsvfFueEm09Sg0LxgFievigmtAEb39paE=",
+      "last_login": null,
+      "is_superuser": 0,
+      "username": "DavWin",
+      "first_name": "Cassandra",
+      "email": "5houssam.kessaiso@facpidif.ml",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2020-06-14 09:46:28",
+      "last_name": "Grahm"
+    }
+  },
+  {
+    "model": "django.contrib.auth.models.User",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$zjnQu4LiqMAT$Qxom08ahzw11iPlX6kYyySa94yJXdjrptta6Qzx8HWE=",
+      "last_login": null,
+      "is_superuser": 0,
+      "username": "HeadlinesGazer",
+      "first_name": "Jamie",
+      "email": "jssssss33@acee9.live",
+      "is_staff": 0,
+      "is_active": 1,
+      "date_joined": "2020-06-14 09:47:21",
+      "last_name": "Lal"
+    }
+  }
+]
