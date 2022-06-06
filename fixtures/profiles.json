@@ -1,32 +1,32 @@
 [
   {
     "model": "profiles.Profile",
+    "pk": 1,
     "fields": {
-      "pk": 1,
       "favorite_city": "Buenos Aires",
       "user_id": 5
     }
   },
   {
     "model": "profiles.Profile",
+    "pk": 2,
     "fields": {
-      "pk": 2,
       "favorite_city": "Barcelona",
       "user_id": 4
     }
   },
   {
     "model": "profiles.Profile",
+    "pk": 3,
     "fields": {
-      "pk": 3,
       "favorite_city": "Budapest",
       "user_id": 3
     }
   },
   {
     "model": "profiles.Profile",
+    "pk": 4,
     "fields": {
-      "pk": 4,
       "favorite_city": "Berlin",
       "user_id": 2
     }

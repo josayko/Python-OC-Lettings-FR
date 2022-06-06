@@ -1,22 +1,22 @@
 [
   {
-    "model": "django.contrib.auth.models.User",
+    "model": "auth.user",
+    "pk": 1,
     "fields": {
-      "pk": 1,
       "password": "pbkdf2_sha256$180000$p35UH2yYInHF$4LTphT2basUmvfLq+XHETVvKONZrWUsLfKu1K8/Hqdk=",
-      "last_login": "2022-06-06 09:30:44.161423",
+      "last_login": null,
       "is_superuser": 1,
       "username": "admin",
       "first_name": "",
       "email": "admin@email.com",
       "is_staff": 1,
       "is_active": 1,
-      "date_joined": "2020-06-14 09:41:15.326411",
+      "date_joined": "2020-06-14T09:41:15.326411Z",
       "last_name": ""
     }
   },
   {
-    "model": "django.contrib.auth.models.User",
+    "model": "auth.user",
     "pk": 2,
     "fields": {
       "password": "pbkdf2_sha256$180000$8ZKjEEdeYubZ$jq4T/Vaa2DWdAvzNys4ynNO6Wd/PsWe3dux20F7BGgQ=",
@@ -27,12 +27,12 @@
       "email": "coemperor@famemma.net",
       "is_staff": 0,
       "is_active": 1,
-      "date_joined": "2020-06-14 09:44:05",
+      "date_joined": "2020-06-14T09:44:05Z",
       "last_name": "Rodriguez"
     }
   },
   {
-    "model": "django.contrib.auth.models.User",
+    "model": "auth.user",
     "pk": 3,
     "fields": {
       "password": "pbkdf2_sha256$180000$DdNkE39rolFF$nGmWZanXv4GlcTxtfUgc+MUIqBgDszAtvFfuFu538LQ=",
@@ -43,12 +43,12 @@
       "email": "flocation.vam4@glendenningflowerdesign.com",
       "is_staff": 0,
       "is_active": 1,
-      "date_joined": "2020-06-14 09:44:45",
+      "date_joined": "2020-06-14T09:44:45Z",
       "last_name": "Paul"
     }
   },
   {
-    "model": "django.contrib.auth.models.User",
+    "model": "auth.user",
     "pk": 4,
     "fields": {
       "password": "pbkdf2_sha256$180000$3VJdHtu39cbD$8qNVkvJ0KddsvfFueEm09Sg0LxgFievigmtAEb39paE=",
@@ -59,12 +59,12 @@
       "email": "5houssam.kessaiso@facpidif.ml",
       "is_staff": 0,
       "is_active": 1,
-      "date_joined": "2020-06-14 09:46:28",
+      "date_joined": "2020-06-14T09:46:28Z",
       "last_name": "Grahm"
     }
   },
   {
-    "model": "django.contrib.auth.models.User",
+    "model": "auth.user",
     "pk": 5,
     "fields": {
       "password": "pbkdf2_sha256$180000$zjnQu4LiqMAT$Qxom08ahzw11iPlX6kYyySa94yJXdjrptta6Qzx8HWE=",
@@ -75,7 +75,7 @@
       "email": "jssssss33@acee9.live",
       "is_staff": 0,
       "is_active": 1,
-      "date_joined": "2020-06-14 09:47:21",
+      "date_joined": "2020-06-14T09:47:21Z",
       "last_name": "Lal"
     }
   }
