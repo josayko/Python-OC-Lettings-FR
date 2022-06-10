@@ -2,4 +2,4 @@
 *.pyc
 venv
 env
-.env
+.env*
