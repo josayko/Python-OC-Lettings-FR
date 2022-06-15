@@ -80,9 +80,9 @@ $ flake8
 $ pytest
 ```
 
-## Dockerization
+## Docker image
 
-#### Build an run a docker image locally
+#### Build and run a docker image locally
 
 - An image of the app will be build from `Dockerfile`
 
@@ -96,12 +96,16 @@ $ docker build -t [IMAGE_NAME] .
 $ docker run --rm -p 8000:8000 --env-file .env [IMAGE_NAME]
 ```
 
-#### Pull the image from Docker Hub
+#### Pull and run the image from Docker Hub
 
 - Sign in to Docker Hub
 
 ```bash
-$ docker pull
+$ docker pull josayko/oc-lettings:latest
+```
+
+```bash
+$ docker run --rm -p 8000:8000 --env-file .env josayko/oc-lettings:latest
 ```
 
 ## Author

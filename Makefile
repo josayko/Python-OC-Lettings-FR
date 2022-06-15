@@ -1,10 +1,10 @@
 all:	build run
 
 build:
-	docker build -t josayko/oc-lettings .
+	docker build -t oc-lettings .
 
 run:
-	docker run --rm -p 8000:8000 --env-file .env josayko/oc-lettings
+	docker run --rm -p 8000:8000 --env-file .env oc-lettings
 
 fixture:
 	python manage.py loaddata users addresses lettings profiles
