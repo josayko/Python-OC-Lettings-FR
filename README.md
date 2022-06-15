@@ -1,5 +1,14 @@
 # Epic Events CRM
 
+[![CircleCI](https://circleci.com/gh/josayko/Python-OC-Lettings-FR/tree/master.svg?style=shield)](https://circleci.com/gh/josayko/Python-OC-Lettings-FR/tree/master)
+
+## Summary
+
+1. [Installation](#installation)
+2. [Running the app](#running-the-app)
+3. [Docker image](#docker-image)
+4. [CI/CD and Deployment](#CI/CD-and-deployment)
+
 ## Installation
 
 ### Prerequisites
@@ -107,6 +116,10 @@ $ docker pull josayko/oc-lettings:latest
 ```bash
 $ docker run --rm -p 8000:8000 --env-file .env josayko/oc-lettings:latest
 ```
+
+## CI/CD and Deployment
+
+- Deployement test: [https://oc-lettings-testing-1.herokuapp.com/](https://oc-lettings-testing-1.herokuapp.com/)
 
 ## Author
 
