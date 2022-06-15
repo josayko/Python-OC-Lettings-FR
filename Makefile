@@ -1,17 +1,10 @@
-all:	up
+all:	build run
 
-up:
-	docker-compose -f database/docker-compose.yml up -d
+build:
+	docker build -t josayko/oc-lettings .
+
+run:
+	docker run --rm -p 8000:8000 --env-file .env josayko/oc-lettings
 
 fixture:
 	python manage.py loaddata users addresses lettings profiles
-
-psql:
-	docker exec -it dev-postgres psql -U admin
-
-down:
-	docker-compose -f database/docker-compose.yml down
-
-clean: down
-	docker volume rm database_pgadmin-data
-	docker volume rm database_postgres-data
