@@ -13,11 +13,11 @@
 #### Local development environment
 
 ```bash
-$ python -m venv env
+$ python -m venv .venv
 ```
 
 ```bash
-$ source env/bin/activate
+$ source .venv/bin/activate
 ```
 
 ```bash
