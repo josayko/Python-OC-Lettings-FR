@@ -7,7 +7,7 @@
 1. [Installation](#installation)
 2. [Running the app](#running-the-app)
 3. [Docker image](#docker-image)
-4. [CI/CD and Deployment](#CI/CD-and-deployment)
+4. [Pipeline CI/CD and Deployement](#pipeline-cicd-and-deployement)
 
 ## Installation
 
@@ -117,9 +117,50 @@ $ docker pull josayko/oc-lettings:latest
 $ docker run --rm -p 8000:8000 --env-file .env josayko/oc-lettings:latest
 ```
 
-## CI/CD and Deployment
+## Pipeline CI/CD and Deployement
 
-- Deployement test: [https://oc-lettings-testing-1.herokuapp.com/](https://oc-lettings-testing-1.herokuapp.com/)
+The pipeline has 3 main jobs, one must finish to do the next:
+
+- `build_and_test`: will build the app, run unit tests and check linting everytime a change is pushed to any branch.
+- `docker/publish`: build the app image from the Dockerfile and push it to the Docker Hub repository. Only when changes on master branch.
+- `heroku/deploy-via-git`: deploy the app on heroku. Only when changes on master branch.
+
+> To set up the pipeline you should do the following configurations in order.
+
+> CircleCI dashboard example: [https://app.circleci.com/pipelines/github/josayko/Python-OC-Lettings-FR?branch=master](https://app.circleci.com/pipelines/github/josayko/Python-OC-Lettings-FR?branch=master)
+
+> Heroku deployed app example: [https://oc-lettings-testing-1.herokuapp.com/](https://oc-lettings-testing-1.herokuapp.com/)
+
+#### Sentry
+
+- Create a new project on Sentry and fill in `SENTRY_DSN` in `.env`
+
+#### Docker Hub
+
+- Create a new repository named `oc-lettings`
+
+#### Heroku
+
+- Create a new Heroku app and fill in the `HEROKU_APP_NAME` in `.env`
+- In your app `Settings > Config Vars`, set the following environment variables:
+  - `DEBUG` set to 0 or false
+  - `DJANGO_SECRET_KEY` same as in `.env`
+  - `ENV` set to _`production`_
+  - `SENTRY_DSN`, same as in `.env`
+
+#### CircleCI
+
+- Create a new project from existing `.circleci/config.yml` file in this repository.
+- In your project `Project Settings > Environment Variables`, set the following variables:
+  - `DEBUG` set to 0 or false
+  - `DJANGO_SECRET_KEY`same as in _.env_
+  - `DOCKER_LOGIN`, your Docker Hub login
+  - `DOCKER_PASSWORD`, your Docker Hub password
+  - `DOCKER_REPO`, e.g. _<your_docker_hub_login>/oc-lettings_
+  - `HEROKU_API_KEY`, in Heroku _Account Settings > API Key_
+  - `HEROKU_APP_NAME`, the name of your app on Heroku
+  - `HEROKU_TOKEN`, same as `HEROKU_API_KEY`
+  - `SENTRY_DSN`, same as in _.env_
 
 ## Author
 
