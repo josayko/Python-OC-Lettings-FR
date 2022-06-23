@@ -129,7 +129,7 @@ The pipeline has 3 main jobs, one must finish to do the next:
 
 > CircleCI dashboard example: [https://app.circleci.com/pipelines/github/josayko/Python-OC-Lettings-FR?branch=master](https://app.circleci.com/pipelines/github/josayko/Python-OC-Lettings-FR?branch=master)
 
-> Heroku deployed app example: [https://oc-lettings-testing-1.herokuapp.com/](https://oc-lettings-testing-1.herokuapp.com/)
+> Heroku deployed app example: [https://oc-lettings-testing-2.herokuapp.com/](https://oc-lettings-testing-2.herokuapp.com/)
 
 #### Sentry
 
